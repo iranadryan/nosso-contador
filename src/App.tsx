@@ -8,7 +8,7 @@ export function App() {
       className="flex flex-col items-center h-screen px-10 py-10 bg-repeat-round bg-size-[600px]"
       style={{ backgroundImage: `url(${background})` }}
     >
-      <div className="absolute top-0 left-0 w-full h-full bg-primary-100 opacity-80"></div>
+      <div className="fixed top-0 left-0 w-full h-full bg-primary-100 opacity-80"></div>
       <div className="z-10">
         <h1 className="text-2xl font-bold text-center text-primary-500/70 leading-none">
           Nosso Contador
