@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-100: #fdecf4;
+  --color-primary-300: #eaa8c3;
+  --color-primary-500: #cf6387;
+  --color-primary-600: #ac5174;
+}
+
+body {
+  font-family: "Cabinet Grotesk", sans-serif;
+}
+
+h2 {
+  font-family: "Kalam", cursive;
+}
