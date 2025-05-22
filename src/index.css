@@ -7,8 +7,10 @@
   --color-primary-600: #ac5174;
 }
 
+html,
 body {
   font-family: "Cabinet Grotesk", sans-serif;
+  background-color: var(--color-primary-100);
 }
 
 h2 {
