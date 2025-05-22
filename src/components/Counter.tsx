@@ -38,8 +38,19 @@ export function Counter({ startDate, title }: CounterProps) {
 
   return (
     <div>
-      <strong className="text-xl font-bold block mb-1 text-primary-500">{title}</strong>
-      <div className="flex gap-2">
+      <strong className="text-xl font-bold block text-primary-500 leading-none">
+        {title}
+      </strong>
+      <span className="text-sm font-medium italic text-primary-600/60 block">
+        {startDate.toLocaleString(undefined, {
+          day: "2-digit",
+          month: "2-digit",
+          year: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+        })}
+      </span>
+      <div className="flex gap-2 mt-1.5">
         <CounterSection label="Dias" value={time.days} />
         <CounterSection label="Horas" value={time.hours} />
         <CounterSection label="Minutos" value={time.minutes} />
